@@ -1,0 +1,49 @@
+body {
+    font: 14px "Century Gothic", Futura, sans-serif;
+    margin: 20px;
+    background-color: rgb(250, 250, 250);
+}
+
+.header {
+    background-color: #242424;
+    position: sticky;
+    height: 60px;
+  }
+h2{
+    text-align: center;
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+	  letter-spacing: 10px;
+    font-weight: bolder;
+    padding: 1rem 1rem;
+    font-size: 30px;
+
+  }
+  h2:hover{
+    transition: transform 0.5s ease-in;
+    color: #04cbfd;
+    border-radius: 0;
+    font-size: 30px;
+  }
+  @media (min-width:576px){
+    .header{
+      max-width:540px
+    }
+
+  }
+  @media (min-width:768px){
+    .header{
+      max-width:720px
+    }
+  }
+  @media (min-width:992px){
+    .header{
+      max-width:960px
+    }
+  }@media (min-width:1200px){
+    .header{
+      max-width:1140px
+    }
+  }
+  
