@@ -1,0 +1,807 @@
+section{
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+}
+li{
+    list-style: none;
+}
+.container{
+    height: 100%;
+    display: flex;
+    padding: 0;
+    background: white;
+    flex-direction: column;
+
+}
+.container_wrap{
+    display: flex;
+    margin: 0;
+    height: 100%;
+}
+.navbar{
+    width:100%;
+    height: 9vh;
+    background:gray;
+    margin: 0;
+}
+.sidebar{
+    height: 100%;
+    background: #8b8b8b;
+    width: 14%;
+    margin:0;
+}
+
+.sidebar2{
+    display: flex;
+    margin-top: .4rem;
+    text-decoration: none;
+    color: white;
+}
+.sidebar2 img{
+    height: 2rem;
+    width: 2rem;
+    margin-left: 0.5rem;
+    margin-right:.5rem;
+}
+.sidebar2 h1{
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-top: .6rem;
+    
+}
+.sidebar2 h1:hover{
+    color: black;
+}
+.dropdown{
+    height: 3rem;
+    width: 5rem;
+    position: absolute;
+    right:1.6rem;
+    top:2rem;
+}
+.dropdown button{
+    cursor:pointer;
+    background:none;
+    border: none;
+
+}
+.hidden{
+    background-color:none;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    width: 7rem;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.8s ease-in-out;
+}
+.hidden h2{
+    font-size: 1rem;
+
+}
+.lin_k{
+    color:black;
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 0.3rem;
+}
+
+.lin_k:hover{
+    color:blue;
+}
+.profile{
+    width: 1rem;
+    height: 1rem;
+    color: white;
+}
+.icon2{
+    border: none;
+    color: black;
+    margin-right: .5rem;
+    width: 1rem;
+    height: 1rem;
+}
+.icon2:hover{
+    color: blue;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    margin-top: .1rem;  
+}
+.content li{
+    display: block;
+    height: 2rem;
+    width: 100%;
+    margin-top: 1.5rem;
+
+}
+.link{
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+}
+.link:hover{
+    color:black;
+}
+.link h4{
+    font-size: 1rem;
+    margin: 0;
+}
+.icon{
+    border: none;
+    color: #fff;
+    margin-left: .5rem;
+    margin-right: 0.2rem;
+    width: 1rem;
+    height: 1rem;
+}
+
+
+/* fotter */
+
+.footer{
+    background-color: grey;
+}
+.footer_wrap{
+    padding: 16px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1300px; 
+    margin: 0 auto;
+}
+.social_media{
+    max-width: 1300px;
+    width: 100%;
+}
+.social_media_wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.social_media_icon{
+    display: flex;
+    width:240px;
+    align-items: center;
+    justify-content: space-between;
+}
+.social_media_icon_link{
+    color: white;
+    font-size:24;
+}
+.footbar{
+    color: white;
+    cursor:pointer;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    font-weight:bold;
+    justify-self: start;
+}
+.footbar img{
+    height: 2rem;
+    width: 2rem;
+    margin-left: 0.5rem;
+    margin-right:1rem;
+}
+.footbar h1{
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-top: .6rem;
+}
+
+@media screen and (max-width:768px){
+    .navbar{
+        width: 100%;
+    }
+    .sidebar{
+        width: 12%;
+    }
+    .sidebar2 h1{
+        font-size: .5rem;
+    }
+    .link h4{
+        display: none;
+    }
+    .social_media_wrap{
+        flex-direction: column;
+    }
+
+}
+
+/* Dashboard css styling*/
+.dashboard_container{
+    width: 90%;
+    height: 100%;
+    flex-direction: column;
+}
+.date{
+    height: 1.2rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.email_wrap{
+    width: 20%;
+    background-color:rgb(255, 0, 0);
+}
+.email_wrap h3{
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+}
+.date_wrap{
+    width: 10%;
+    background-color:rgb(255, 0, 0);
+}
+.date_wrap h2{
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+}
+.detail_container{
+    position: absolute;
+    border: 1px solid black;
+    margin: 2rem 2.5rem;
+    width: 75%;
+    height: 45vh;   
+}
+.information{
+    position: relative;
+    background-color:white;
+    border: 1px solid black;
+    width: 80%;
+    height: 2rem;
+    margin-left: 7rem;
+    margin-top: -1.2rem;
+}
+.information h3{
+    line-height: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    letter-spacing: 3px;
+}
+.detail_container_wrap{
+    margin: 1rem;
+    height: 37vh;
+    background-color: grey;
+    display: flex;
+}
+.detail_wrap{
+    display: flex;
+    width: 70%;
+}
+.details{
+    display: flex;
+}
+.details_one{
+    margin-top: 2rem;
+    margin-left: 1rem;
+    
+}
+.details_Two{
+    margin-top: 2rem;
+    margin-left: 1rem;
+    
+    
+}
+.details ul{
+    display: flex;
+}
+.details li{
+    display: flex;
+}
+.details h2{
+    color:rgb(255, 255, 255);
+    font-size: 1.3rem;
+    margin: .4rem 1rem;
+}
+.details h3{
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    margin-top: .8rem;
+    margin-bottom: .8rem ;
+    margin-right: 1rem;
+    margin-left: .7rem;
+}
+.img_wrap{
+    background-color: white;
+    height: 10rem;
+    width: 15%;
+    position: relative;
+    left: 2rem;
+    margin-top: 1.3rem;
+    /* justify-items: flex-end;
+    align-items: flex-end; */
+}
+
+@media screen and (max-width:768px){
+    .date{
+        display: flex;
+        height: 3%;
+    }
+    .dashboard_container{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .email_wrap{
+        width: 55%;
+        margin-right: .2rem;
+    }
+    .email_wrap h3{
+        font-size: .5rem;
+        text-align: center;
+    }
+    .date_wrap{
+        width: 30%;
+    }
+    .date_wrap h2{
+        font-size: .5rem;
+        color: #fff;
+        text-align: center;
+    }
+    .detail_container{
+        margin: 4rem 1.5rem;
+        width: 70%;
+        height: 60%;   
+    }
+     .information{
+        width: 80%;
+        height: 10%;
+        margin-left: 1.6rem;
+        margin-top: -1.2rem;
+    }
+    .information h3{
+        line-height: 2rem;
+        font-size: 0.7rem;
+    }
+    .detail_container_wrap{
+        margin: 1rem;
+        display: flex;
+        height: 50vh;
+    }
+    .detail_wrap{
+        display: flex;
+        width: 65%;
+        flex-direction: column;
+    }
+    .details{
+        display: flex;
+        flex-direction: column;
+    }
+    .details_one{
+        margin-top: .2rem;
+        
+    }
+    .details_Two{
+        margin-top: .5rem;
+    }
+    .details h2{
+        font-size: .8rem;
+        margin-top: .4rem;
+        margin-bottom: .4rem ;
+        margin-left:0.1rem;
+        margin-right:0rem;
+    }
+    .details h3{
+        font-size: .6rem;
+        text-align: center;
+        margin-top: .5rem;
+        margin-bottom: .5rem ;
+        margin-left: 0.3rem;
+    }
+    .img_wrap{
+        height: 30%;
+        width: 20%;
+        position: relative;
+        left: 4.7rem;
+        margin-top: 1rem;
+    }
+}
+
+/* payment history css*/
+.payment_search{
+    width: 90%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+   
+}
+.payment_search input{
+    width:50%;
+    appearance: none;
+    background:none;
+    border: 1px solid blue;
+    border-radius: 8px;
+    padding: 10px 15px;
+    outline: none;
+    transition:0.4s;
+    margin-left: 20rem;
+    height: 3%;
+}
+.payment_search button{
+    width: 5%;
+    color: blue;
+	padding: 5px 0px;
+	border: none;
+	cursor: pointer;
+    position: absolute;
+    margin-left: 60rem;
+    background-color:transparent ;
+
+}
+.Table{
+    width: 100%;
+    margin-top: 50px;
+    position: absolute;
+    margin-left: 3rem;
+}
+.Table table{
+    border-top: 1px solid blue;
+	border-left: 1px solid blue;
+}
+.Table th{
+    border-bottom: 1px solid  blue;
+	border-right: 1px solid blue;
+	padding: 8px;
+}
+.Table td{
+    border-bottom: 1px solid blue;
+	border-right: 1px solid blue;
+	padding: 8px;
+}
+.row1{
+	background-color: #8d8d8d;
+    color: #fff;
+}
+.sn{
+    width: 1%
+}
+.token{
+    width: 15%;
+}
+.transaction{
+    width: 25%;
+}
+.status{
+    width: 10%;
+}
+.with{
+    width: 15%;
+}
+.on{
+    width: 20%;
+}
+.amount{
+    width:30%;
+}
+.print{
+    width: 10%;
+}
+@media screen and (max-width:768px){
+    .payment_search{
+        width: 80%;
+        height: 10%;
+        display: flex;
+        position: absolute;
+       
+    }
+    .payment_search input{
+        width:96%;
+        appearance: none;
+        background:none;
+        border: 1px solid blue;
+        border-radius: 8px;
+        padding: 10px 15px;
+        outline: none;
+        transition:0.4s;
+        margin-left: .8rem;
+        height: 3%;
+    }
+   .payment_search button{
+        width: 5%;
+        color: blue;
+        padding: 5px 0px;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        margin-left: 13rem;
+        background-color:transparent ;
+    
+    }
+     .Table{
+        width: 90%;
+        margin-top: 50px;
+        position: absolute;
+        margin-left: .4rem;
+    }
+    .Table th{
+        padding: 2px;
+    }
+    .Table td{
+        padding: 8px;
+    }
+
+    .sn{
+        width: .2%
+    }
+    .token{
+        width: 5%;
+    }
+    .transaction{
+        width: 10%;
+    }
+    .status{
+        width: 4%;
+    }
+    .with{
+        width: 5%;
+    }
+    .on{
+        width: 10%;
+    }
+    .amount{
+        width:10%;
+    }
+    .print{
+        width: 3%; 
+    }
+
+}
+/*Token css*/
+.token_container{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.token_container h2{
+    font-size: 3rem;
+    color: blue;
+    margin-right: .5rem;
+}
+.token_container input{
+    width:50%;
+    appearance: none;
+    background:none;
+    border: 1px solid grey;
+    border-radius: 8px;
+    padding: 10px 15px;
+    outline: none;
+    transition:0.4s;
+    margin-left: .8rem;
+    height: 3%;
+}
+.button_wrap{
+    align-items: center;
+    justify-content: center;
+    margin-top: .7rem;
+    margin-left: 45%;
+}
+.button{
+    background: #000d1a;
+    align-items: center;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    justify-content: center;
+    max-width: 200px;
+    min-width: 20px;
+    display: flex;
+    border:none;
+    white-space: nowrap;
+    padding: 14px;
+    color: #fff;
+    font-size: 10px;
+
+
+}
+.button:hover{
+    transform: translateY(-2px);
+    }
+@media screen and (max-width:768px)
+ {
+    .token_container{
+        margin-top: 3rem;
+    }
+    .token_container input{
+        width:80%;
+        appearance: none;
+        background:none;
+        border-radius: 5px;
+        padding: 10px 15px;
+        outline: none;
+        transition:0.4s;
+        margin-left: .2rem;
+        height: 1%;
+    }
+    .button_wrap{
+        align-items: center;
+        justify-content: center;
+        margin-top: .7rem;
+        margin-left: 33%;
+    }
+/* wallet css*/
+.account{
+    margin-top: 1.5rem;
+    margin-left: 4rem;
+    width: 90%;
+    height: 3%;
+    border: 1px solid blue;
+    border-radius: 2rem;
+}
+.account h2{
+    text-align: center;
+    font-size: 1rem;
+
+}
+.balance_wrap{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-left: 4rem;
+    border-radius: 20px;
+    background-color: #1c54fc;
+    width: 90%;
+    height: 20%;
+}
+.amunt{
+    display: flex;
+    justify-content: space-between;
+}
+.amount_wrap{
+    margin: 1rem;
+    display: flex;
+    /* border-bottom: 1px solid white; */
+}
+.amount_wrap h2{
+    color: #fff;
+    font-size: 2rem;
+}
+.amount_icon{
+    width: 4rem;
+    height: 4rem;
+}
+.fcplus{
+    width: 4rem;
+    height: 4rem
+}
+.balance{
+    color: #fff;
+    margin-left: 1rem;
+    font-size: 1rem;
+    border-top: 1px solid white;
+}
+.balance h4{
+    padding-top: 1rem;
+    font: 0.5rem
+}
+.payment_wrap{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    height: 25%;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+}
+.pay{
+    height: 70%;
+    width: 15%;
+    margin-right: 7rem;
+    background-color: red;
+}
+.h3_wrap{
+    margin-top: .5rem;
+    border-top: 1px solid white;
+}
+.pay h3{
+    font-size: 1.5rem;
+    margin-top: .4rem;
+    text-align: center;
+}
+.BiTransfer{
+    color: black;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-left: 4.5rem;
+    margin-top: 1rem;
+}
+.link1{
+    color: black;
+    text-decoration: none;
+}
+.link1:hover{
+    color:#fff;
+}
+@media screen and (max-width:768px) {
+    .account{
+        margin-top: 1rem;
+        margin-left: 1rem;
+        width: 85%;
+        height: 3%;
+    }
+    .account h2{
+        font-size: .5rem;
+    }
+    .balance_wrap{
+        margin-top: 1rem;
+        margin-left: 1rem;
+        border-radius: 20px;
+        width: 85%;
+    }
+    .amount_wrap h2{
+        color: #fff;
+        font-size: 1.5rem;
+    }
+    .amount_icon{
+        width: 2rem;
+        height: 2rem;
+        margin-top: 1rem;
+        margin-right: 1rem;
+    }
+    .fcplus{
+        width: 2rem;
+        height: 2rem
+    }
+    .balance{
+        color: #fff;
+        margin-left: 1rem;
+        font-size: 1rem;
+        border-top: 1px solid white;
+    }
+    .balance h4{
+        padding-top: 1rem;
+        font: 0.5rem
+    }
+    .payment_wrap{
+        margin-top: 1rem;
+        margin-left: 4rem;
+        height: 25%;
+        width: 85%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .pay{
+        height: 50%;
+        width: 70%;
+        margin-bottom: 1rem;
+    }
+    .h3_wrap{
+        margin-top: .1rem;
+    }
+    .pay h3{
+        font-size: 1rem;
+        margin-top: .2rem;
+        text-align: center;
+    }
+    .BiTransfer{
+        height: 1.5rem;
+        width: 1.5rem;
+        margin-left: 2.5rem;
+        margin-top: .4rem;
+    }
+}}

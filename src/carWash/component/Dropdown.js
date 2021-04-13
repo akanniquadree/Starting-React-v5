@@ -73,7 +73,7 @@ const Dropdown = ({isOpen, toggle}) => {
             <DropdownWrapper>
                 <DropdownMenu>
                     {menuData.map((item, index)=>(
-                        <DropdownLink to={item.link} key={index}>
+                        <DropdownLink to={item.to} key={index}>
                             {item.title}
                         </DropdownLink>
                     ))}

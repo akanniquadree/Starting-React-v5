@@ -9,30 +9,37 @@ const Section = styled.section `
 width: 100%;
 height: 100%;
 padding: 0;
+background: #f4f7f0;
+margin: auto;
 `;
 
 const InfoContainer = styled.div `
  padding: 3rem calc((100vw - 1300px) / 2);
- heigh:100%;
+ height:100%;
 `;
 const InfoContainerUp = styled.div `
-    font-size: clamp(1.5rem, 6vw, 2rem);
-    margin-bottom: 0.3rem;
+align-items: center;
+margin-left: 1.5rem;
+h{
+    font-size: clamp(3rem, 6vw, 2rem);
+    margin-bottom: 0.2rem;
+    justify-content: center;
 }
 `;
 
 const InfoContainerDown = styled.div `
-padding: 3rem calc((100vw - 1500px) / 2);
+padding: 1rem calc((100vw - 1500px) / 2);
 display: grid;
 grid-template-columns: 1fr 1fr;
 
 @media screen and  (max-width: 786px){
     grid-template-columns:1fr;
+}
 `;
 const InfoContainerDownLeft = styled.div `
 margin-left: 1rem;
 margin-right: 1rem;
-img{
+    img{
     width:100%;
     height:80%;
     object-fit:cover;
@@ -40,11 +47,12 @@ img{
     @media screen and (max-width:768px){
         width:80%;
         height:70%;
-}
-p{
-    margin-bottom:2rem;
-    font-size: 20px;
-}
+     }
+    }
+    p{
+    margin-bottom:1rem;
+    font-size: 15px;
+    }
 `;
 const InfoContainerDownRight = styled.div `
 margin-left: 1rem;
@@ -53,12 +61,11 @@ margin-right: 1rem;
     width:100%;
     height:80%;
     object-fit:cover;
-    margin-top: 6rem;
 
     @media screen and (max-width:768px){
         width:80%;
         height:70%;
-    }
+     }
     }
     p{
     margin-bottom:1rem;
@@ -78,7 +85,7 @@ function InfoTwo ({heading, imageone, imagetwo, buttonLabel, paragraphOne, parag
                     <InfoContainerDown>
                         <InfoContainerDownLeft>
                             <img src = {imageone} alt="equipment"/>
-                            <p>{paragraphOne},</p>
+                            <p>{paragraphOne}</p>
                             <Button to="/home" primary="true">
                                 {buttonLabel}
                                 <Arrow/>

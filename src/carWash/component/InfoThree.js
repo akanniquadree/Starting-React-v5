@@ -15,6 +15,7 @@ background: black;
 
 @media screen and  (max-width: 786px){
     grid-template-columns:1fr;
+    padding: 1rem calc((100vw - 1300px) / 2);
 }
 `;
 const SectionLeft = styled.div `
@@ -27,6 +28,9 @@ background: white;
 height: 15rem;
 margin-top: 8rem;
 border-radius: 10px;
+@media screen and  (max-width: 786px){
+    margin: 0 1rem;
+}
 h1{
     margin-bottom:1rem;
     font-size: clamp(1.5rem, 6vw, 2rem);
@@ -34,6 +38,10 @@ h1{
 }
 p{
     margin-bottom: 2rem;
+   
+    @media screen and  (max-width: 786px){
+        margin-buttom: 0.5rem;
+    }
 }
 `;
 const SectionRight = styled.div `

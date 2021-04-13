@@ -28,7 +28,7 @@ max-width: 1300px;
 margin: 0 auto;
 
 @media screen and (max-width:768px){
-    flex-direction: column
+    flex-direction: column;
 }
 `;
 const SocialLogo = styled.div `

@@ -52,7 +52,7 @@ form{
  }
 
  @media screen and (max-width:768px){
-    width: 100%;
+    width: 105%;
 }
 `;
  const FormGroup = styled.div `
@@ -88,9 +88,12 @@ label{
 }
 `;
 const ButtonWrap = styled.div `
-margin-left: 6rem;
+margin-left: 8rem;
 width: 20%;
 margin-bottom: 0.5rem;
+@media screen and (max-width:768px){
+    margin-left: 6rem;
+}
 
 `;
 const Paragraph = styled.div ` 
@@ -140,7 +143,7 @@ function SignUp() {
                         <p>Forget Password <ParaLink to="/">Click here!!!</ParaLink></p> 
                     </Paragraph>
                     <ButtonWrap>
-                        <Button to = "/" primary="true">Sign In</Button>
+                        <Button to = "/portal" primary="true">Sign In</Button>
                     </ButtonWrap>
                     <ParagraphTwo>
                     <p>Dont have an account  <ParaLink to="/register">Click here!!!</ParaLink></p>

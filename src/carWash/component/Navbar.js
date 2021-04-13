@@ -1,9 +1,11 @@
 import React from "react";
 import styled from "styled-components";
+import Image from "../images/glossy.png"
 import { Link } from "react-router-dom";
 import { menuData } from "../data/MenuData"
 import { Button } from "./Button";
-import { RiBarChartHorizontalFill } from "react-icons/ri"
+import { RiBarChartHorizontalFill } from "react-icons/ri";
+// import {NavLink} from "react-router-dom";
 
 const Nav = styled.nav`
 height: 60px;
@@ -12,7 +14,7 @@ background: blue;
 justify-content: space-between;
 width: 100%;
 z-index:100;
-position: fixed;
+// position: fixed;
 padding: 1em 2em;
 `
 const Logo = styled(Link)`
@@ -25,6 +27,11 @@ display: flex;
 font-style: italic;
 text-decoration: none;
 font-weight: bold;
+img{
+    width: 2rem;
+    heigth: 2rem;
+    margin-right: 1rem;
+}
 `
 // const NavLink = css`
 // color:#fff;
@@ -83,16 +90,15 @@ margin-right: 24px;
 function Navbar({toggle}){
     return(
         <Nav>
-            <Logo to="/">MandyCarWash</Logo>
-            <MenuBars onClick={toggle} />
-            <NavMenu>
-                {menuData.map((item, index) => (
-                   <NavMenuLink to={item.link} key={index}>
-                       {item.title}
-                   </NavMenuLink>
-                ))}
-            
-            </NavMenu>
+                <Logo to="/home"><img src={Image}/>MandyCarWash</Logo>
+                <MenuBars onClick={toggle} />
+                <NavMenu>
+                    {menuData.map((item, index) => (
+                    <NavMenuLink to={item.to} key={index}>
+                        {item.title}
+                    </NavMenuLink>
+                    ))}
+                </NavMenu>
             <NavBtn>
                 <Button to="/sign-up" primary="true">
                     Sign Up

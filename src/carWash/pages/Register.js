@@ -33,7 +33,7 @@ form{
     }
     @media screen and (max-width:768px){
         width: 83%;
-        height: 100%;
+        height: 90%;
     }
 }
 `;
@@ -51,10 +51,14 @@ form{
      padding-top: 5px;
      margin-bottom: 13px;
      text-align: center;
+     @media screen and (max-width:768px){
+       margin-bottom: 5px;
+    }
  }
 
  @media screen and (max-width:768px){
-    width: 100%;
+    width: 108%;
+    height: 100%;
 }
 `;
  const RegisterFormGroup = styled.div `
@@ -77,6 +81,7 @@ input{
     }
     @media screen and (max-width:768px){
         width: 80%;
+        padding: 2px 13px;
     }
 }
 label{
@@ -86,13 +91,18 @@ label{
     color:blue;
     transition:0.4s;
     margin-left: 1rem;
-    margin-bottom: 1rem;
+    @media screen and (max-width:768px){
+         margin-bottom: 1px;
+    }
 }
 `;
 const RegisterButtonWrap = styled.div `
-margin-left: 6rem;
+margin-left: 13rem;
 width: 20%;
 margin-bottom: 0.5rem;
+@media screen and (max-width:768px){
+    width: 10%;
+}
 
 `;
 const RegisterParagraph = styled.div ` 
@@ -101,6 +111,9 @@ p{
     font-size: 15px;
     color: blue;
     margin: 0px 0.09rem 1rem 1rem;
+    @media screen and (max-width:768px){
+        margin-bottom: 0.3rem;
+    }
 }
 `;
 const RegisterParaLink = styled(Link)`
